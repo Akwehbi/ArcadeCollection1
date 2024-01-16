@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Darker Grotesque';
+  color: rgb(0, 23, 50);
+  font-size: 40px;
+  background-color: rgb(216, 238, 232);
+  padding: 16px;
+}
+.game-container {
+ 
+  width: 484px;
+}
+
+.game-panel {
+
+}
+
+.game-board {
+  border: 2px solid rgb(0, 23, 50);
+  position: relative;
+
+ 
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.score{
+  font-size: 32px;
+  display: flex; /* allign in a page or container*/
+  justify-content: space-between;  /*skaber mellemrum */
+}
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell{
+  border:1px solid black;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.end-game-screen{
+  position: absolute; /*fjerner borders fra resten*/
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(241, 117, 78, 0.7); /* transparcy*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.end-game-text {
+  font-family: 'Press Start 2P';
+  font-size: 48;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 24px;
+  font-family: 'Darker Grotesque';
+  padding: 4px 20px 8px 20px; /*padding for øvre nedre og højre venstre*/
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid rgb(0, 23, 50);
+   
+}
+.btn:hover { /* det er kun når man har musen på knappen */
+
+  background-color: rgb(203, 224, 221);
+}
+
+.hidden {
+  display: none;
+}
